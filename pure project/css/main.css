@@ -1,0 +1,389 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+ul{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	transition: .3s;
+}
+main{
+	width: 100%;
+	height: 100vh;
+}
+body{
+	background: url(../bg.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+	position: relative;
+	width: 100%;
+}
+.sebar{
+	border-radius: 20px;
+    border: 2px solid darkred;
+    margin-left: -170px;
+	margin-bottom: 30px;
+    background-color: black;
+    color: red;
+    padding: 10px;
+}
+
+.top{
+	background-image: linear-gradient(black 50%, white);
+	padding: 20px 0;
+}
+.socials{
+	float: right;
+    width: 60px;
+    height: 50px;
+	padding: 10px;
+    margin-bottom: 20px;
+}
+.social{
+	width: 20%;
+	height: 10%;
+    position: absolute;
+	top: 15px;
+	right: 5px;
+}
+
+.container{
+	max-width: 960px;
+	height: 6vh;
+	margin: 0 auto;
+}
+.top ul li{
+	margin-right: 15px;
+}
+.top ul li a{
+	color: #fff;
+}
+.top ul li a:hover{
+	color: #222;
+}
+nav{
+	width: 100%;
+	height: 100%;
+	background: #333;
+	padding: 10px;
+	z-index: 10;
+}
+.logo{
+	margin-top: -75px;
+	margin-left: 370px;
+	width: 230px;
+	height: 20px;
+}
+nav ul{
+	width: 100%;
+	transition: .3s;
+}
+nav ul li a{
+	float: left;
+	padding: 15px;
+	margin-right: 40px;
+	color: #ff0;
+	font-weight: bold;
+}
+
+.menulist:hover span:not(:hover){
+	opacity: 0.5;
+	transition: opacity .5s;
+}
+
+.pages:hover{
+	color: #ef3624;
+}
+
+
+#menu{
+	display: none;
+}
+label{
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px 0;
+	display: none;
+}
+section {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+	text-align: justify;
+	margin: 15px 0;
+  }
+  
+  article {
+    margin: 20px;
+    width: 25vw;
+	height: 40vh;
+	position: relative;
+	top: 5px;
+    text-align: justify;
+    background-color: gray;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 10px;
+	overflow-y: hidden;
+	
+  }
+  
+  article h2 {
+    font-size: 24px;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	
+  }
+  
+  article p {
+    font-size: 16px;
+	justify-content: center;
+  }
+  .arct {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	
+	
+  }
+  .bimg{
+	border-radius: 100%;
+  }
+  article:hover{
+	transition: 500ms ;
+	transform: scale(1.1);
+	background-color: black;
+	color: white;
+	box-shadow: 1px 1px 40px #ef3624 ;
+  }
+
+  /* ------------------------------------<aside>------------------------------------- */
+
+  aside{
+  background-color: #333;
+  width: 129px ;
+  height: 70vh;
+  direction: rtl;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+
+  }
+
+  aside a{
+ display: block;
+ text-align: center;
+ font-size: 1.5rem;
+ padding: 1.5rem;
+ color:#ff0;
+  }
+
+  aside a:hover{
+	background-color: darkred;
+	transition: all .3s ease-in-out;
+  }
+
+  
+  .tab {
+	width: 100%;
+	height: 100%;
+	/* text-align: center; */
+
+  }
+  .info{
+	width: 305px;
+    height: 70vh;
+	visibility: hidden;
+	border-radius: 10%;
+	background-color:#999;
+	padding: 15px;
+	float: left;
+	border: 1px solid black;
+	overflow: auto;
+	text-shadow: 1px 1px 6px rgb(0, 0, 0);
+  }
+
+  #one:target{
+	background-color: rgb(132, 177, 9);
+	transition: all .3s ease-in;
+	transform: scale(102%);
+	visibility: visible;
+  }
+
+  #two:target{
+	background-color: rgb(231, 12, 12);
+	transition: all .3s ease-in;
+	transform: scale(102%);
+	visibility: visible;
+  }
+
+  #three:target{
+   background-color: rgb(132, 177, 9);
+   transition: all .3s ease-in;
+   transform: scale(102%);
+   visibility: visible;
+  }
+
+  #four:target{
+	background-color:  rgb(231, 12, 12);
+	transition: all .3s ease-in;
+	transform: scale(102%);
+	visibility: visible;
+  }
+
+  /* ---------------------------------card---------------------------------- */
+
+  .card{
+	height: 200px;
+	width: 350px;
+	margin: 50px;
+	clear: left;
+	overflow: hidden;
+	transition: all .4s ;
+  }
+
+ .run img{
+	height: 200px;
+	width: 300px;
+	border-radius: 3px;
+	transition: all .4s ;
+ }
+
+ .intro{
+	height: 200px;
+	width:100px;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #222;
+	color: #fff;
+    margin-top: -205px;
+	margin-left: -100px;
+	transition: all .4s ;
+ }
+
+ .intro a {
+	color: #ff0;
+	padding: 10px 0;
+	margin-right: -20px;
+	transition: all .4s ;
+ }
+
+ .run:hover img{
+	filter: brightness(0.30);
+	transition: all .4s ;
+ }
+
+ .run:hover{
+	margin-left: 100px;
+	transition: all .4s ;
+ }
+
+ .intro:hover{
+	margin-right: 100px;
+	transition: all .4s ;
+ }
+
+ 
+
+@media (max-width: 1000px) {
+
+	.sebar{ position: relative;
+		left: 40px;
+		width: 150px;
+		
+	}
+
+	header{
+		font-size: medium;
+	}
+	
+
+	a{
+		font-size: 1rem ;
+}
+
+.logo{
+	margin-left: 10px;
+	font-size: 1rem;
+}
+}
+@media (max-width: 768px){
+	label{
+		display: block;
+	}
+	.container{
+		padding: 0 40px;
+	}
+	.logo{
+		margin-right: -15%;
+	} 
+	.sebar{
+		position: relative;
+		left: 10px;
+	}
+	.logo img{
+		width: 150px;
+	}
+	nav{
+		padding: 0;
+	}
+	nav ul{
+		position: absolute;
+		top: 50px;
+		left: -100%;
+		background: #000;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		height: 100rem;
+	}
+
+	#menu:checked ~ ul{
+		left: 0;
+	}
+	nav ul li{
+		margin: 0 !important;
+		width: 100%;
+	}
+	nav ul li a{
+		border: 1px solid #ef3624;
+		padding: 15px 0;
+		margin: 10px 0;
+		text-align: center;
+	}
+	nav ul li a:hover{
+		background: rgb(255, 255, 255);
+	}
+
+	article{
+		height:250px ;
+		overflow: hidden;
+		overflow-y: scroll;
+		padding: 20px;
+	}
+	.socials{
+		width: 30px;
+		padding: 0;
+		position: relative;
+		right: -30px;
+
+	}
+	.arct{
+		font-size: xx-small;
+	}
+}
